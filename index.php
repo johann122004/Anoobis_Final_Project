@@ -9,9 +9,13 @@
 <body>
 
 
+    <div class="Top"> //This servers as the main header design that has logo and buttons for navigation
+        
+    </div>
+
     ello testing
 
-
+    <div class="Bottom"></div> This section is the footer, containing info about Anoobis and contact info that links to another page
     
 </body>
 </html>
