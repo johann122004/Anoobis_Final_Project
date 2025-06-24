@@ -8,6 +8,9 @@
 </head>
 <body>
 
+
+
+welcome to the best coffee shop in the world!
     eloooooooo
     <div class="Top"> #This servers as the main header design that has logo and buttons for navigation
         
