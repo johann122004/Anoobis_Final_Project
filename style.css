@@ -1,6 +1,67 @@
-Top {
-
+body{
+    background: linear-gradient(to right, gold 50%, white 50%);
 }
-Bottom {
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    z-index: 1000;
+    & a{
+        font-size: 50px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight:bolder;
+        color: gold;
+        text-decoration: none;
+        background-color: rgb(0, 0, 104);
+    }
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    & a{
+        position: absolute;
+        right: 50px;
+        bottom: 50px;
+        font-size: 50px;
+        font-weight:bolder;
+        color: gold;
+        text-decoration: none;
+        background-color: rgb(0, 0, 104);
+    }
+    & p{
+        color: gold;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    background-color: blue;
+}
 
+.Content{
+    display:flex;
+    padding-top: 100px;
+    justify-content: space-between;
+    padding: 20px;
+}
+.Left, .Right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    & a {
+        padding: 10px 20px;
+        font-size: 24px;
+        font-weight: bold;
+        background-color: black;
+        color: wheat;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
 }
