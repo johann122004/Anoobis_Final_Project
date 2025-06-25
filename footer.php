@@ -1,11 +1,18 @@
 <footer>
-    <p>&copy; 2023 Your Company Name. All rights reserved.</p>
-    <?php include ('header.php'); ?>
+    
 
 
+    <div class="FOOTER">
+        
+        <p><a href="/Pages/Contact Us/ContactUs.php"> Contact Us </a></p>
+    <br>
+        THIS IS THE FOOTER
+        <p> ANOOBIS CAFE INC. </p>
+        <p> Company registration no: 383-888-380-8888 </p>
+        <p>&copy; 2025 Anoobis Cafe. All rights reserved. </p>
 
-    <p><a href="/Pages/Product List/Product.php"> Our Products</a></p>
-    <p> <a href="/Pages/Shopping/Shop.php">NOM NOM NOM</a></p>
+
+    </div>
 
 
 

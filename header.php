@@ -1,6 +1,22 @@
 <header>
-    <p> <a href="/Pages/Product List/Product.php"> Product </a></p>
-    <p> <a href="/Pages/Shopping/Shop.php"> Shopping </a></p>
-    <p> <a href="/Pages/Receipt/Receipt.php"> Receipt </a></p>
-    <?php include ('footer.php'); ?>
+
+
+
+
+    <div class="HEADER">
+    LOGO on the upper left side
+        <p> <a href="/Pages/Product List/Product.php"> Menu </a></p>
+        <p> <a href="/Pages/Shopping/Shop.php"> Shopping </a></p>
+
+
+    </div>
+    
+        THIS IS THE HEADER
+
+
+        <br><br>
+
+
+
+
 </header>
