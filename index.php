@@ -12,16 +12,16 @@
             require ('header.php');
         ?>
     </div>
-
+    <br><br><br><br><br><br>
     <div class = Content>
         <div class = "Left">
             <h1>"Craving the taste of the afterlife? One sip, and you're resurrected."</h1>
-            <p> <a href="/Pages/Shopping/Shop.php">NOM NOM NOM</a></p>
+            <p> <a href="Pages/Shopping/Shop.php">NOM NOM NOM</a></p>
         </div>
 
         <div class = "Right">
             <h1>"A brew of Ancient magic and modern mastery - every sip awakens the gods."</h1>
-            <p><a href="/Pages/Product List/Product.php"> Our Products</a></p>
+            <p><a href="Pages/Product List/Product.php"> Our Products</a></p>
         </div>
     </div>
     <div class="Bottom">
