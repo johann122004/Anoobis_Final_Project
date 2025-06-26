@@ -22,7 +22,7 @@
         <img src="/Castillo_pfp.jpg" alt="">
         <h1>Name: Jahaziah Castillo</h1>
         <h1>Contributions: Web Aesthetics Designer</h1>
-        <h1>Description: </h1>
+        <h1>Description: Jahaziah is an Animation and Game Development student in FEU Tech. She creates simple, artistic, and eye catching web design for the group's project while sticking to time manageable aesthetics. She is willing to learn on how to code and develop logical skills in problem solving as well as to gain experience in group collaboration and communication. While having the love of passion in arts and carefully checking and fixing the group's output. </h1>
         <br><br>
         <img src="/Eros_pfp.jpg" alt="">
         <h1>Name: Reanne Eros Gabay</h1>
