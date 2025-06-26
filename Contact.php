@@ -27,7 +27,7 @@
         <img src="/Eros_pfp.jpg" alt="">
         <h1>Name: Reanne Eros Gabay</h1>
         <h1>Contributions: Web Code Programmer</h1>
-        <h1>Description: </h1>
+        <h1>Description: Currently a student at FEU TECH, with a want to learn how to create an eye catching UI, hopes that this project will be just that. </h1>
         <br><br>
     </div>
     <div class = "Info">
