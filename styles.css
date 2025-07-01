@@ -74,3 +74,102 @@ footer {
         border-radius: 5%;
     }
 }
+
+.Shopping{
+    background-color: rgb(255, 231, 94);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & p, input{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        width: 800px;
+        background-color: white;
+        border-style: solid;
+        color: rgb(0, 0, 167);
+        border-color: rgb(0, 0, 167);
+        border-width: thick;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    & h1{
+        background-color: rgb(16, 16, 66);
+        font-family: 'Courier New', Courier, monospace;
+        color: gold;
+        padding: 25px;
+    }
+    & input[type=submit]{
+        color: gold;
+        background-color: rgb(48, 48, 150);
+        border-color: yellow;
+        border-width: thick;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+.Receipt{
+    table{
+        width: 100%;
+    }
+    & th{
+        border-style: solid;
+        border-width: 5px;
+        background-color: rgb(13, 13, 49);
+    }
+    p{
+        font-size: 25px;
+        text-align: center;
+    }
+    p.Item{
+        color: rgb(17, 0, 255);
+    }
+    p.Price, .Cost{
+        background-color: white;
+        color: blue;
+        border-style: solid;
+        border-width: 2px;
+    }
+    p.Quan{
+        background-color: white;
+        color: blue;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 25%;
+    }
+    h1{
+        color: gold;
+    }
+    h2.Total{
+        position: absolute;
+        right: 0;
+        margin-right: 50px;
+        background-color: white;
+        color: blue;
+        border-style: solid;
+        border-width: 2px;
+        padding: 10px;
+    }
+    h2.Time{
+        position: absolute;
+        left: 0;
+        margin-left: 50px;
+        background-color: white;
+        color: blue;
+        border-style: solid;
+        border-width: 2px;
+        padding: 10px;
+    }
+    h2.Dist{
+        position: absolute;
+        top: 825px;
+        left: 0;
+        margin-left: 50px;
+        background-color: white;
+        color: blue;
+        border-style: solid;
+        border-width: 2px;
+        padding: 10px;
+    }
+}
