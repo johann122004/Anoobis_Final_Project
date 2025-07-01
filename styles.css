@@ -57,3 +57,20 @@ footer {
 .Info{
     text-align: center;
 }
+
+.Coffee{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    & p {
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 20px;
+        padding-left: 25px;
+        color: bisque;
+    }
+    & .product1, .product2, .product3, .product4, .product5, .product6{
+        background-color: rgb(64, 64, 255);
+        border-radius: 5%;
+    }
+}
