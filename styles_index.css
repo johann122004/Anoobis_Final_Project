@@ -1,3 +1,8 @@
+
+
+
+/* CSS FOR LOGIN PAGE */
+
 body{
     background-color: wheat;
 }
@@ -14,14 +19,6 @@ header {
         border-width: 50%;
         border-color: gold;
     }
-}
-.hcon{
-    display: flex;
-    justify-content: space-between;
-}
-.hButton{
-    display: flex;
-    gap: 15px;
 }
 
 footer {

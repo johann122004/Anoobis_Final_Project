@@ -12,6 +12,8 @@ header {
     left: 0;
     top: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
     background-color: blue;
     z-index: 1000;
     & a{
@@ -23,14 +25,6 @@ header {
         text-decoration: none;
         background-color: rgb(0, 0, 104);
     }
-}
-.hcon{
-    display: flex;
-    justify-content: space-between;
-}
-.hButton{
-    display: flex;
-    gap: 15px;
 }
 
 footer {
