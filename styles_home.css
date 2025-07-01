@@ -12,8 +12,6 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     background-color: blue;
     z-index: 1000;
     & a{
