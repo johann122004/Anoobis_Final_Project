@@ -15,7 +15,10 @@ header {
         border-color: gold;
     }
 }
-
+.hcon{
+    display: flex;
+    justify-content: space-between;
+}
 .hButton{
     display: flex;
     gap: 15px;
