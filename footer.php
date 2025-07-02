@@ -2,8 +2,8 @@
 <link rel = "stylesheet" href = "styles_home.css" >
 <div class = "fcon" >
 
-    <div class = "contact" >
-    <p><a href = "Contact.php" > Contact Us </a></p>
+<div class = "contact" >
+    <p class="contactfooter"><a href = "Contact.php" > Contact Us </a></p>
 
     <br>
 
