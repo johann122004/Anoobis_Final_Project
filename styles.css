@@ -4,9 +4,12 @@ img{
     border-width: 50%;
     border-color: gold;
 }
-body{
+.MeSh{
     background-color: rgb(255, 246, 194);
     padding-bottom: 100px;
+}
+.receipt{
+    background-color: gold;
 }
 header {
     position: fixed;

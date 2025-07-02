@@ -6,7 +6,7 @@
     <title>Receipt</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class = "receipt">
     <div class="Top">
         <?php #This serves as the main header design that has logo and buttons for navigation
             require ('header.php');

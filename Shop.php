@@ -6,14 +6,14 @@
     <title>Order Now</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class = "MeSh">
     <div class="Top">
         <?php #This serves as the main header design that has logo and buttons for navigation
             require ('header.php');
         ?>
     </div>
     <br><br><br><br><br><br>
-    <div class="Shopping">
+    <div class="MeShRe">
         <form action="Receipt.php" method="POST">
             <h1>ORDERS</h1>
             <div class="Order">
