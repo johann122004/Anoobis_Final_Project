@@ -9,18 +9,15 @@
 
     <body class = "MeSh">
 
-
         <div class = "Top">
-            
+
             <?php #This serves as the main header design that has logo and buttons for navigation
                 require ('header.php');
             ?>
 
         </div>
 
-
-        <br><br><br><br><br><br>
-
+        <br><br><br><br><br>
 
         <div class = "MeShRe">
             <form action = "Receipt.php" method = "POST">
@@ -35,8 +32,6 @@
                     <p>Product 5: Ankh Americano - PHP 110.00 / Order: <input type = "number" name = "Ankh"> </p>
                     <p>Product 6: Golden Scarab Latte - PHP 125.00 / Order: <input type = "number" name = "Scarab"> </p>
                 </div>
-
-
 
                 <h1>ADDRESS</h1>
                 <div class="Address">
@@ -56,25 +51,20 @@
                 </div>
 
 
-                <br><br>
-
                 <input type = "submit" value = "SUBMIT">
 
             </form>
         </div>
 
-        
-        <br><br><br><br><br><br>
 
 
         <div class="Bottom">
-            
+
             <?php #This section is the footer, containing info about Anoobis and contact info that links to another page
                 require ('footer.php');
             ?>
 
         </div>
-
 
     </body>
 </html>
