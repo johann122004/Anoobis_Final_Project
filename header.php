@@ -1,15 +1,18 @@
-
 <header>
-<link rel="stylesheet" href="styles_home.css">
-<div class = "hcon">
-    <div class = "logo">
-        <img src="Logo.png" alt="">
+<link rel = "stylesheet" href = "styles_home.css">
+
+    <div class = "hcon">
+        
+        <div class = "logo">
+            <img src = "Logo.png" alt = "">
+        </div>
+
+        <div class = "hButton">
+            <a href = "home.php"> Home </a>  
+            <a href = "Product.php"> Menu </a>
+            <a href = "Shop.php"> Shopping </a>
+        </div>
+
     </div>
 
-    <div class = "hButton">
-        <a href="home.php"> Home </a>  
-        <a href="Product.php"> Menu </a>
-        <a href="Shop.php"> Shopping </a>
-    </div>
-</div>
 </header>
