@@ -29,7 +29,7 @@ footer {
     display: flex;
     justify-content: space-between;
     /*background-color: blue;*/
-    background-color: orange;
+    background-color: blue;
     z-index: 1000;
     & p{
         color: gold;
@@ -37,6 +37,12 @@ footer {
         font-weight: bolder;
     }
 }
+
+.FOOTER{
+    padding-left: 15px;
+}
+
+
 
 .Login{
     display:flex;
