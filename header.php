@@ -1,7 +1,9 @@
+
 <header>
+<link rel="stylesheet" href="styles_home.css">
 <div class = "hcon">
     <div class = "logo">
-        <img src="Logo.png" alt="" width="5%" height="5%">
+        <img src="Logo.png" alt="">
     </div>
 
     <div class = "hButton">

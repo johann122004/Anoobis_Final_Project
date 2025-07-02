@@ -16,7 +16,9 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    background-color: green;
     z-index: 1000;
     & a{
         font-size: 50px;
@@ -31,6 +33,17 @@ header {
 .hcon{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    padding-left: 15px;
+}
+
+.hButton{
+    display: flex;
+    gap: 20px;
+    padding-left: 50px;
 }
 footer {
     position: fixed;
