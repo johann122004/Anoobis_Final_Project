@@ -38,7 +38,7 @@
                     $dbuser = $rows["name"];
                     $dbpass = $rows["password"];
                     if ( $username == $dbuser && $password == $dbpass ) {
-                        header ("Location: Home.php" );
+                        header ("Location: home.php" );
                         exit();
                     }
                     else{
