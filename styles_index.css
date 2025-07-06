@@ -6,7 +6,7 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    background-color: blue;
+    background-color: #004aad;
     z-index: 1000;
     img{
         border-radius: 100%;
@@ -24,7 +24,7 @@ footer {
     display: flex;
     justify-content: space-between;
     /*background-color: blue;*/
-    background-color: blue;
+    background-color: #004aad;
     z-index: 1000;
     & p{
         color: gold;

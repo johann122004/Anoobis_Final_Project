@@ -25,10 +25,10 @@ img{
         text-decoration: underline;
         font-size: 20px;
         padding-left: 25px;
-        color: bisque;
+        color: #004aad;
     }
     & .product1, .product2, .product3, .product4, .product5, .product6{
-        background-color: rgb(64, 64, 255);
+        background-color: rgb(255, 185, 64);
         border-radius: 5%;
     }
 }
