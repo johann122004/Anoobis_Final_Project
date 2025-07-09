@@ -22,12 +22,12 @@ img{
     gap: 20px;
     & p {
         font-weight: bold;
-        text-decoration: underline;
+        text-decoration: none;
         font-size: 20px;
         padding-left: 25px;
         color: #004aad;
     }
-    & .product1, .product2, .product3, .product4, .product5, .product6{
+    & .product{
         background-color: rgb(255, 185, 64);
         border-radius: 5%;
     }

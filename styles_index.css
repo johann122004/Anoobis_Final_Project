@@ -1,43 +1,10 @@
 body{
     background-color: wheat;
 }
-header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background-color: #004aad;
-    z-index: 1000;
-    img{
-        border-radius: 100%;
-        border-style: solid;
-        border-width: 50%;
-        border-color: gold;
-    }
-}
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    /*background-color: blue;*/
-    background-color: #004aad;
-    z-index: 1000;
-    & p{
-        color: gold;
-        font-size: 20px;
-        font-weight: bolder;
-    }
-}
 
-.FOOTER{
-    padding-left: 15px;
-}
 
-.Login{
+.Login, .Reg{
     display:flex;
     padding-top: 100px;
     justify-content: space-between;

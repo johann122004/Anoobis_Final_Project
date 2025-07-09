@@ -16,7 +16,6 @@
             <?php #This serves as the main header design that has logo and buttons for navigation
                 require ('header.php');
             ?>
-            
         </div>
 
 
@@ -47,7 +46,6 @@
 
                 <?php
                     foreach ($items as $item => $price) {
-                        
                         if(isset ( $_POST [$item] ) && ( $_POST [$item] > 0 ) ) {
                             $quantity = $_POST [$item] ;
                             $cost = $price * $quantity;
@@ -71,11 +69,9 @@
 
 
             <?php
-
-                echo "<h2 class='Time'>Expected Time: " . rand(3,8) . " Minutes</h2>";
-                echo "<h2 class='Total'>Total Cost: PHP " .  number_format($finaltotal, 2) . "</h2>";
-                echo "<h2 class='Dist'>Distance from you: " . rand(5,10) . " km</h2>";
-
+                if(!empty($_POST['name'])){
+                    echo "<h2 class = 'Name'> Name: ". $_POST['name']. "</h2>";
+                }
             ?>
 
 

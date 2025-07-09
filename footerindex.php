@@ -1,5 +1,5 @@
 <footer>
-<link rel = "stylesheet" href = "styles_index.css">
+<link rel = "stylesheet" href = "styles_home.css">
 
     <div class = "FOOTER">
         <p> ANOOBIS CAFE INC. </p>

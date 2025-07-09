@@ -25,17 +25,25 @@
                 <h1>ORDERS</h1>
 
                 <div class = "Order">
-                    <p>Product 1: Anubis' Dark Roast - PHP 90.00 / Order: <input type = "number" name = "Anubis"> </p>
-                    <p>Product 2: Jackal's Delight - PHP 95.00 / Order: <input type = "number" name = "Jackal"> </p>
-                    <p>Product 3: Coffin Spice - PHP 100.00 / Order: <input type = "number" name = "Coffin"> </p>
-                    <p>Product 4: Pharaoh's Nectar - PHP 130.00 / Order: <input type = "number" name = "Pharaoh"> </p>
-                    <p>Product 5: Ankh Americano - PHP 110.00 / Order: <input type = "number" name = "Ankh"> </p>
-                    <p>Product 6: Golden Scarab Latte - PHP 125.00 / Order: <input type = "number" name = "Scarab"> </p>
+                    <?php
+                    $conn = mysqli_connect('localhost','root','','anoobis') or die(mysqli_error($conn));
+                    $result = mysqli_query($conn,'SELECT * FROM products');
+
+                    while ($row = mysqli_fetch_assoc($result)){
+                        $inputName = str_replace('','', $row['productName']);
+                        echo "<p>";
+                        echo "Product: " . $row['productName']." - PHP " . number_format($row['productPrice'], 2);
+                        echo "/ Order: <input type='number' name ='". $inputName . "' min = '0'>";
+                        echo "</p>";
+                    }
+                    ?>
                 </div>
 
                 <h1>ADDRESS</h1>
                 <div class="Address">
 
+                    <p>Name: </p>
+                        <input type = "letter" name = "name" id = "name">
                     <p>Subdivision: </p>
                         <input type = "letter" name = "subd" id = "subd">
 
