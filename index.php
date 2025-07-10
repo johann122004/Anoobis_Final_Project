@@ -51,7 +51,7 @@
                     }
                 }
             }
-            $query2 = mysqli_query($conn,"select * from admin");
+            $query2 = mysqli_query($conn,"select * from useradmin");
             if ( mysqli_num_rows ($query2) > 0 ) {
                 while ( $rows = mysqli_fetch_assoc ($query2) ) {
                     $dbuser = $rows["adminName"];

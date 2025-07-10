@@ -13,8 +13,12 @@ body{
 table{
     width: 100%;
     font-size: 50px;
-    input{
-        font-size: 20px;
+    input, a{
+        background-color: rgb(0, 0, 163);
+        font-size: 30px;
         font-family: 'Courier New', Courier, monospace;
+        color: yellow;
+        text-decoration-line:underline;
+        padding: 5px;
     }
 }

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 10, 2025 at 02:58 PM
+-- Generation Time: Jul 10, 2025 at 04:03 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -20,25 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `anoobis`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `admin`
---
-
-CREATE TABLE `admin` (
-  `id` int(255) NOT NULL,
-  `adminName` varchar(255) NOT NULL,
-  `adminPassword` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `admin`
---
-
-INSERT INTO `admin` (`id`, `adminName`, `adminPassword`) VALUES
-(1, 'admin', 'admin123');
 
 -- --------------------------------------------------------
 
@@ -74,6 +55,27 @@ INSERT INTO `products` (`id`, `productName`, `productPrice`, `productDscrp`, `pr
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `useradmin`
+--
+
+CREATE TABLE `useradmin` (
+  `id` int(255) NOT NULL,
+  `adminName` varchar(255) NOT NULL,
+  `adminPassword` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `useradmin`
+--
+
+INSERT INTO `useradmin` (`id`, `adminName`, `adminPassword`) VALUES
+(10, 'admin', 'admin123'),
+(13, 'admin1', 'admin345'),
+(14, 'admin2', 'admin678');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -88,22 +90,12 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`ID`, `name`, `password`) VALUES
-(1, 'Johann1220', 'JRhann02'),
-(2, 'anubis', '123'),
 (3, 'flipper', 'flabber'),
-(4, 'Pepper', 'Jack');
+(13, 'pepper', 'jack');
 
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `admin`
---
-ALTER TABLE `admin`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `adminName` (`adminName`),
-  ADD UNIQUE KEY `adminPassword` (`adminPassword`);
 
 --
 -- Indexes for table `orders`
@@ -118,6 +110,14 @@ ALTER TABLE `products`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `useradmin`
+--
+ALTER TABLE `useradmin`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `adminName` (`adminName`),
+  ADD UNIQUE KEY `adminPassword` (`adminPassword`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -129,22 +129,22 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT for table `admin`
---
-ALTER TABLE `admin`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
   MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
+-- AUTO_INCREMENT for table `useradmin`
+--
+ALTER TABLE `useradmin`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
