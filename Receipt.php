@@ -12,68 +12,56 @@
 
 
         <div class = "Top">
-
             <?php #This serves as the main header design that has logo and buttons for navigation
                 require ('header.php');
             ?>
         </div>
 
-
         <br><br><br><br><br><br>
-
 
         <div class = "Receipt">
 
             <?php
-
+                $conn = mysqli_connect('localhost','root','','anoobis');
+                $result = mysqli_query($conn,'SELECT * FROM products');
                 $finaltotal = 0;
-                $items = array("Anubis" => 90.00, "Jackal" => 95.00, "Coffin" => 100.00,
-                "Pharaoh" => 130.00, "Ankh" => 110.00, "Scarab" => 125.00);
-
             ?>
 
             <table>
-
                 <tr>
-
                     <th><h1>Product Name</h1></th>
                     <th><h1>Price</h1></th>
                     <th><h1>Quantity</h1></th>
                     <th><h1>Cost</h1></th>
-
                 </tr>
 
-
                 <?php
-                    foreach ($items as $item => $price) {
-                        if(isset ( $_POST [$item] ) && ( $_POST [$item] > 0 ) ) {
-                            $quantity = $_POST [$item] ;
-                            $cost = $price * $quantity;
-                            $finaltotal += $cost;
-                            ?>
-                            <tr>
+                while ($row = mysqli_fetch_assoc($result)){
+                    $productName = $row['productName'];
+                    $productPrice = $row['productPrice'];
+                    $inputName = 'product_'.$row['id'];
+                    if(isset($_POST[$inputName]) && intval ($_POST[$inputName]) > 0){
+                        $quantity = intval ($_POST[$inputName]);
+                        $cost = $productPrice * $quantity;
+                        $finaltotal += $cost;
 
-                                <td><?php echo "<p class = 'Item'>".$item."</p>"; ?></td>
-                                <td><?php echo "<p class = 'Price'> PHP " . number_format($price, 2)."</p>"; ?></td>
-                                <td><?php echo "<p class = 'Quan'>".$quantity."</p>"; ?></td>
-                                <td><?php echo "<p class = 'Cost'> PHP " . number_format($cost, 2)."</p>"; ?></td>
-
-                            </tr>
-                            <?php
-                        }
+                        echo "<tr>
+                                <td><p class = 'Item'>". htmlspecialchars($productName) ."</p></td>
+                                <td><p class = 'Price'> PHP " . number_format($productPrice, 2)."</p></td>
+                                <td><p class = 'Quan'>".$quantity."</p></td>
+                                <td><p class = 'Cost'> PHP " . number_format($cost, 2)."</p></td>
+                            </tr>";
                     }
+                }
                 ?>
-
-
             </table>
-
+            <h2 class = "Total">Total: PHP <?php echo number_format($finaltotal,2);?> </h2>
 
             <?php
                 if(!empty($_POST['name'])){
-                    echo "<h2 class = 'Name'> Name: ". $_POST['name']. "</h2>";
+                    echo "<h2 class = 'Name'> Name: ". htmlspecialchars($_POST['name']). "</h2>";
                 }
             ?>
-
 
         </div>
 

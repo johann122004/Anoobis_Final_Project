@@ -18,9 +18,9 @@
         </div>
 
         <br><br><br><br><br>
-
         <div class = "MeShRe">
-            <form action = "Receipt.php" method = "POST">
+
+            <form action="Receipt.php" method = "POST">
 
                 <h1>ORDERS</h1>
 
@@ -30,7 +30,7 @@
                     $result = mysqli_query($conn,'SELECT * FROM products');
 
                     while ($row = mysqli_fetch_assoc($result)){
-                        $inputName = str_replace('','', $row['productName']);
+                        $inputName = 'product_'.$row['id'];
                         echo "<p>";
                         echo "Product: " . $row['productName']." - PHP " . number_format($row['productPrice'], 2);
                         echo "/ Order: <input type='number' name ='". $inputName . "' min = '0'>";
@@ -43,7 +43,7 @@
                 <div class="Address">
 
                     <p>Name: </p>
-                        <input type = "letter" name = "name" id = "name">
+                        <input type = "letter" name = "name" id = "name" required>
                     <p>Subdivision: </p>
                         <input type = "letter" name = "subd" id = "subd">
 
@@ -58,13 +58,16 @@
 
                 </div>
 
-
                 <input type = "submit" value = "SUBMIT">
-
             </form>
+            <?php
+            if($_SERVER["REQUEST_METHOD"] == "POST"){
+                $conn = mysqli_connect('localhost','root','','anoobis');
+                $orderQuery = "INSERT INTO orders (OrderCount) VALUES ()";
+                mysqli_query($conn, $orderQuery);
+            }
+            ?>
         </div>
-
-
 
         <div class="Bottom">
 

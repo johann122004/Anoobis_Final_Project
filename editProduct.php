@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Editing Page</title>
+    <link rel = "stylesheet" href = "styles_admin.css">
 </head>
 <body>
     <div class = "Top">
@@ -39,13 +40,13 @@
     $products = mysqli_query($conn,"SELECT * FROM products");
     ?>
     <h1>Product Editor</h1>
-    <form method="POST">
-        <input type="text" name="productName" placeholder="Name" required>
-        <input type="text" name="productDscrp" placeholder="Description" required>
-        <input type="number" step="0.01" name="productPrice" placeholder="Price" required>
-        <input type="text" name="productIMG" placeholder="Image File (e.g. product.jpg)" required>
-        <input type="submit" name="add" value = "Add Product">
-    </form>
+        <form method="POST">
+            <input type="text" name="productName" placeholder="Name" required>
+            <input type="text" name="productDscrp" size="50" placeholder="Description" required>
+            <input type="number" step="0.01" name="productPrice" placeholder="Price" required>
+            <input type="text" name="productIMG" placeholder="Image File (e.g. product.jpg)" required>
+            <input type="submit" name="add" value = "Add Product">
+        </form>
 
     <table border="1">
         <tr>
@@ -60,12 +61,12 @@
                 <input type="hidden" name="id" value="<?= $row['id'] ?>">
                 <tr>
                     <td><input type="text" name="productName" value="<?= $row['productName'] ?>"></td>
-                    <td><input type="text" name="productDscrp" value="<?= $row['productDscrp'] ?>"></td>
+                    <td><input type="text" name="productDscrp" size="50" value="<?= $row['productDscrp'] ?>"></td>
                     <td><input type="number" step="0.01" name="productPrice" value="<?= $row['productPrice'] ?>"></td>
                     <td><input type="text" name="productIMG" value="<?= $row['productIMG'] ?>"></td>
                     <td>
                         <input type="submit" name="edit" value="Update">
-                        <a href="editProduct.php?delete=<?= $row['id'] ?>">Delete</a>
+                        <input type="submit" name="delete" value="Erase">
                     </td>
                 </tr>
             </form>

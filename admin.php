@@ -14,11 +14,13 @@
         </div>
         <br><br><br><br><br><br><br><br><br>
         <?php
+        session_start();
         $conn = mysqli_connect('localhost','root','','anoobis');
-        $result = mysqli_query($conn,"SELECT COUNT(*) as count FROM orders");
+        $result = mysqli_query($conn,'SELECT COUNT(*) AS totalOrders FROM orders');
         $row = mysqli_fetch_assoc($result);
-        echo "<h1>WELCOME ADMIN</h1>";
-        echo "<h2>Total Orders: ". $row['count']."</h2>";
+        $orderCount = $row['totalOrders'];
+        echo "<h1>WELCOME ADMIN TO THE ADMIN PAGE.</h1>";
+        echo "<h2>Total Orders: ". $orderCount."</h2>";
         ?>
         <div class = "Bottom">
 

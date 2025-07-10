@@ -25,7 +25,7 @@
 
         </form>
     </div>
-    <div class="Login"><a href="index.php"><p>Already a user? Click here.</p></a></div>
+    <div class="Old"><a href="index.php"><p>Already a user? Click here.</p></a></div>
 <?php
     $conn = mysqli_connect("localhost", "root", "", "anoobis") or die(mysqli_error());
     if (isset($_POST["register"])) {
@@ -37,6 +37,7 @@
         } else {
             mysqli_query($conn, "INSERT INTO users (name, password) VALUES ('$username', '$password')");
             echo "<script>alert('Registration successful!'); window.location='index.php';</script>";
+            header ("Location: home.php" );
         }
     }
 ?>

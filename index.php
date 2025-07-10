@@ -17,7 +17,7 @@
 
     <br><br><br><br><br><br>
 
-    <div class = Login>
+    <div class = Log>
         <form method = "POST" >
             <h1>LOG-IN</h1>
             <p>Username: <input type="text" name="uname"><br><br></p>
@@ -27,7 +27,7 @@
         </form>
         
     </div>
-    <div class="Reg"><a href="register.php"><p>Register a new user here.</p></a></div>
+    <div class="New"><a href="register.php"><p>Register a new user here.</p></a></div>
     
     <?php
         $conn = mysqli_connect("localhost","root","","anoobis") or die(mysqli_error());

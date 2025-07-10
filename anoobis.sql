@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 09, 2025 at 07:31 PM
+-- Generation Time: Jul 10, 2025 at 02:58 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -47,10 +47,7 @@ INSERT INTO `admin` (`id`, `adminName`, `adminPassword`) VALUES
 --
 
 CREATE TABLE `orders` (
-  `id` int(11) NOT NULL,
-  `user_name` varchar(255) NOT NULL,
-  `total` decimal(10,2) NOT NULL,
-  `order_date` datetime NOT NULL DEFAULT current_timestamp()
+  `OrderCount` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -66,6 +63,13 @@ CREATE TABLE `products` (
   `productDscrp` text NOT NULL,
   `productIMG` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`id`, `productName`, `productPrice`, `productDscrp`, `productIMG`) VALUES
+(6, 'Anubis Dark Roast', 90.00, 'Dark Roast Coffee Product', 'Anubis_Dark_Roast.jpg');
 
 -- --------------------------------------------------------
 
@@ -85,7 +89,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`ID`, `name`, `password`) VALUES
 (1, 'Johann1220', 'JRhann02'),
-(2, 'anubis', '123');
+(2, 'anubis', '123'),
+(3, 'flipper', 'flabber'),
+(4, 'Pepper', 'Jack');
 
 --
 -- Indexes for dumped tables
@@ -103,7 +109,7 @@ ALTER TABLE `admin`
 -- Indexes for table `orders`
 --
 ALTER TABLE `orders`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`OrderCount`);
 
 --
 -- Indexes for table `products`
@@ -129,22 +135,16 @@ ALTER TABLE `admin`
   MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `orders`
---
-ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

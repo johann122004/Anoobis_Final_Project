@@ -11,6 +11,7 @@
             <a href = "home.php"> Home </a>
             <a href = "Product.php"> Menu </a>
             <a href = "Shop.php"> Shopping </a>
+            <a href = "index.php"> Log-out </a>
         </div>
 
     </div>
