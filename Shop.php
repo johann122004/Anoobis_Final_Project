@@ -101,6 +101,11 @@
             // Display address details (if provided)
             if (!empty($_POST['name'])) {
                 echo "<h2 class='Name'>Name: " . htmlspecialchars($_POST['name']) . "</h2>";
+                echo "<h2 class='Name'>Name: " . htmlspecialchars($_POST['name']) . "</h2>";
+                echo "<h2 class='Name'>Address: " . htmlspecialchars($_POST['subd']) . "</h2>";
+                echo "<h2 class='Name'>Province: " . htmlspecialchars($_POST['prov']) . "</h2>";
+                echo "<h2 class='Name'>City: " . htmlspecialchars($_POST['city']) . "</h2>";
+                echo "<h2 class='Name'>Zip Code: " . htmlspecialchars($_POST['zip']) . "</h2>";
             }
             echo "</div>";
         }
