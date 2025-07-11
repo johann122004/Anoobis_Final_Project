@@ -39,11 +39,20 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 100px;
+    .MeShRe form{
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
     & p, input{
-        display: flex;
+        display: block;
         justify-content: space-between;
-        margin: 20px;
-        width: 800px;
+        margin: 20px auto;
+        width: 100%;
+        max-width: 800px;
         background-color: white;
         border-style: solid;
         color: rgb(0, 0, 167);
@@ -52,6 +61,7 @@ img{
         font-family: 'Courier New', Courier, monospace;
         font-size: 25px;
         font-weight: bold;
+        box-sizing: border-box;
     }
     & h1{
         background-color: rgb(16, 16, 66);
@@ -66,14 +76,8 @@ img{
         border-width: thick;
         font-family: 'Courier New', Courier, monospace;
     }
-}
-.Receipt{
-    table{
-        width: 100%;
-    }
     & th{
         border-style: solid;
-        border-width: 5px;
         background-color: rgb(13, 13, 49);
     }
     p{
@@ -99,24 +103,23 @@ img{
     h1{
         color: gold;
     }
-    h2.Total{
-        position: absolute;
-        right: 0;
-        margin-right: 50px;
+    h2.Total, h2.Name, h2.summary{
+        margin-left: auto;
+        margin-right: auto;
         background-color: white;
         color: blue;
         border-style: solid;
         border-width: 2px;
         padding: 10px;
+        width: 90%;
+        max-width: 800px;
+        margin-top: 20px;
     }
-    h2.Name{
-        position: absolute;
-        left: 0;
-        margin-left: 50px;
-        background-color: white;
-        color: blue;
-        border-style: solid;
-        border-width: 2px;
-        padding: 10px;
+    .result{
+        max-height: 70vh;
+        overflow-y: auto;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
     }
 }

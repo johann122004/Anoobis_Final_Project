@@ -66,7 +66,7 @@
                     <td><input type="text" name="productIMG" value="<?= $row['productIMG'] ?>"></td>
                     <td>
                         <input type="submit" name="edit" value="Update">
-                        <input type="submit" name="delete" value="Erase">
+                        <a href="editProduct.php?delete=<?= $row['id'] ?>">ERASE</a>
                     </td>
                 </tr>
             </form>

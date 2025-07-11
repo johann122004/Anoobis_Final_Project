@@ -20,6 +20,7 @@
         $row = mysqli_fetch_assoc($result);
         $orderCount = $row['totalOrders'];
         echo "<h1>WELCOME ADMIN TO THE ADMIN PAGE.</h1>";
+        echo "<img src ='Logo.png' width ='25%' height = '25%'>";
         echo "<h2>Total Orders: ". $orderCount."</h2>";
         ?>
         <div class = "Bottom">

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 10, 2025 at 04:03 PM
+-- Generation Time: Jul 11, 2025 at 02:13 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -28,8 +28,51 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `orders` (
-  `OrderCount` int(11) NOT NULL
+  `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`id`) VALUES
+(1),
+(2),
+(3),
+(4),
+(5),
+(6),
+(7),
+(8),
+(9),
+(10),
+(11),
+(12),
+(13),
+(14),
+(15),
+(16),
+(17),
+(18),
+(19),
+(20),
+(21),
+(22),
+(23),
+(24),
+(25),
+(26),
+(27),
+(28),
+(29),
+(30),
+(31),
+(32),
+(33),
+(34),
+(35),
+(36),
+(37);
 
 -- --------------------------------------------------------
 
@@ -50,7 +93,8 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `productName`, `productPrice`, `productDscrp`, `productIMG`) VALUES
-(6, 'Anubis Dark Roast', 90.00, 'Dark Roast Coffee Product', 'Anubis_Dark_Roast.jpg');
+(6, 'Anubis Dark Roast', 90.00, 'Dark Roast Coffee Product', 'Anubis_Dark_Roast.jpg'),
+(7, 'Ankh Americano', 100.00, 'Americano Coffee Product', 'Ankh_Americano.jpg');
 
 -- --------------------------------------------------------
 
@@ -91,7 +135,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`ID`, `name`, `password`) VALUES
 (3, 'flipper', 'flabber'),
-(13, 'pepper', 'jack');
+(13, 'pepper', 'jack'),
+(14, 'anubis', '123');
 
 --
 -- Indexes for dumped tables
@@ -101,7 +146,7 @@ INSERT INTO `users` (`ID`, `name`, `password`) VALUES
 -- Indexes for table `orders`
 --
 ALTER TABLE `orders`
-  ADD PRIMARY KEY (`OrderCount`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `products`
@@ -129,10 +174,16 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+
+--
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `useradmin`
@@ -144,7 +195,7 @@ ALTER TABLE `useradmin`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
